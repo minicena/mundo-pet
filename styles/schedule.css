@@ -1,0 +1,134 @@
+.schedule {
+    padding: 4.31rem 1.25rem 2rem 1.25rem;
+}
+
+.schedule > header {
+    margin-bottom: 2rem;
+}
+
+.schedule > header h1 {
+    font: var(--title);
+    color: var(--content-primary);
+}
+
+.schedule > header p {
+    font: var(--paragraph-medium);
+    color: var(--content-secondary);
+}
+
+.schedule-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 11.50rem;
+    height: 3rem;
+    border: 1px solid var(--border-primary);
+    padding: 0.5rem;
+    gap: 0.2rem;
+    margin-top: 0.75rem;
+    border-radius: 0.5rem;
+
+}
+
+.schedule-date i {
+    margin: 0;
+}
+
+.schedule-date input {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--content-secondary);
+    background-color: transparent;
+
+    outline: none;
+    border: none;
+}
+
+::-webkit-calendar-picker-indicator  {
+    cursor: pointer;
+    background: url("../assets/arrow-default.svg") no-repeat;
+
+}
+
+.schedule-period {
+    width: 21.87rem;
+    overflow-y: auto;
+    background-color: var(--background-tertiary);
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.schedule-period header {
+    display: flex;
+    padding: 0.75rem 1.25rem;
+    align-items: center;
+    width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--border-primary);
+}
+
+
+.schedule-period header img {
+    margin-right: 0.75rem;
+}
+
+.schedule-period header strong {
+    width: 12.68rem;
+    font: var(--label-large);
+    color: var(--content-primary);
+}
+
+.schedule-period header span {
+    font: var(--label-large);
+    color: var(--content-secondary);
+}
+
+.schedule-period ul {
+    list-style: none;
+    width: 19.37rem;
+    height: 6rem;
+    margin: 1.25rem;
+}
+
+.schedule-period li {
+    display: flex;
+    margin: 0.8rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 0.75rem 0 0.75rem;
+    border-bottom: 1px solid var(--border-primary);
+
+    & p {
+        font: var(--paragraph-medium);
+        color: var(--content-secondary);
+    }
+}
+
+time {
+    font: var(--label-medium);
+    color: var(--content-primary);
+}
+
+.schedule-period .appointment-info {  
+      & strong {
+        font: var(--label-medium);
+        color: var(--content-primary);
+      }
+
+      & span {
+        font: var(--paragraph-medium);
+        color: var(--content-secondary);
+    }
+}
+
+.schedule-period button {
+    display: flex;
+    justify-content: end;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font:  var(--paragraph-small);
+    color: var(--content-tertiary);
+}
+

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link rel="icon" href="./assets/Dog-Duotone--Streamline-Phosphor.svg" />
+    <title>Mundo Pet</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/logo.svg" alt="logo" class="logo" />
+
+      <anside class="schedule">
+        <header>
+          <h1>Sua agenda</h1>
+          <p>
+            Aqui você pode ver todos os clientes e serviços agendados para hoje.
+          </p>
+
+          <div class="schedule-date">
+            <i
+              ><img
+                src="./assets/Calendar-Minimalistic--Streamline-Solar.svg"
+                alt="calendar"
+            /></i>
+            <input type="date" id="date" name="date" />
+          </div>
+        </header>
+
+        <!-- Schedule Period: Morning -->
+
+        <section class="schedule-period">
+          <header>
+            <img src="./assets/Sun Fog.svg" alt="Manhã" />
+            <strong>Manhã</strong>
+            <time>09h-12h</time>
+          </header>
+          <ul id="period-morning" class="period">
+            <li>
+              <div class="appointment-info">
+                <time>09:00</time>
+                <strong>Thor</strong>
+                <span class="owner">/ Fernanda Costa</span>
+              </div>
+
+              <p class="appointment-type">Vacinação</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Schedule Period: Afternoon -->
+
+        <section class="schedule-period">
+          <header>
+            <img src="./assets/Cloud-Sun.svg" alt="Manhã" />
+            <strong>Tarde</strong>
+            <time>13h-18h</time>
+          </header>
+          <ul id="period-afternoon" class="period">
+            <li>
+              <div class="appointment-info">
+                <time>13:00</time>
+                <strong>Mel</strong>
+                <span class="owner">/ João Souza</span>
+              </div>
+
+              <p class="appointment-type">Corte de Unhas</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+
+            <li>
+              <div class="appointment-info">
+                <time>14:00</time>
+                <strong>Bella</strong>
+                <span class="owner">/ Pedro Martins</span>
+              </div>
+
+              <p class="appointment-type">Aplicação de Anti-pulgas</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+
+          </ul>
+        </section>
+      </anside>
+    </div>
+  </body>
+</html>

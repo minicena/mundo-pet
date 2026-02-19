@@ -17,15 +17,17 @@
     <title>Mundo Pet</title>
   </head>
   <body>
+    <img src="./assets/logo.svg" alt="logo" class="logo" />
     <div class="container">
-      <img src="./assets/logo.svg" alt="logo" class="logo" />
-
       <anside class="schedule">
         <header>
-          <h1>Sua agenda</h1>
-          <p>
-            Aqui você pode ver todos os clientes e serviços agendados para hoje.
-          </p>
+          <div class="title">
+            <h1>Sua agenda</h1>
+            <p>
+              Aqui você pode ver todos os clientes e serviços agendados para
+              hoje.
+            </p>
+          </div>
 
           <div class="schedule-date">
             <i
@@ -93,9 +95,116 @@
               <button class="remove">Remover Agendamento</button>
             </li>
 
+            <li>
+              <div class="appointment-info">
+                <time>15:00</time>
+                <strong>Simba</strong>
+                <span class="owner">/ Juliana Rocha</span>
+              </div>
+
+              <p class="appointment-type">Tosa Higiênica</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Schedule Period: Night -->
+
+        <section class="schedule-period">
+          <header>
+            <img src="./assets/Moon-Stars--Streamline-Solar.svg" alt="Noite" />
+            <strong>Noite</strong>
+            <time>19h-21h</time>
+          </header>
+          <ul id="period-afternoon" class="period">
+            <li>
+              <div class="appointment-info">
+                <time>20:00</time>
+                <strong>Max</strong>
+                <span class="owner">/ Camila Santos</span>
+              </div>
+
+              <p class="appointment-type">Limpeza de Dentes</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
           </ul>
         </section>
       </anside>
+
+      <!-- Button to add new appointment -->
+
+      <div class="appointment-container">
+        <div class="appointment-scheduling">
+          <button class="btn-new-scheduling">Novo Agendamento</button>
+        </div>
+      </div>
     </div>
+
+    <section class="form-scheduling">
+      <form method="POST" enctype="multipart/form-data">
+        <div class="close">
+          <img  class="btn-close" src="assets/Close-Small-Fill--Streamline-Rounded-Fill---Material-Symbols.svg" alt="close">
+        </div>
+        <div class="form-title">
+          <h1>Agende um Atendimento</h1>
+          <p>Preencha os dados do cliente para realizar o agendamento: </p>
+        </div>
+        <fieldset class="input-fieldset">
+
+          <div class="input-group">
+            <label for="owner-name">Nome do Tutor:</label>
+            <div class="input-icon-wrapper">
+              <i class="user input-icon"></i>
+              <input type="text" id="owner-name" name="owner-name" placeholder="Helena Souza">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="pet-name">Nome do Pet:</label>
+            <div class="input-icon-wrapper">
+              <i class="pet input-icon"></i>                
+              <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Telefone:</label>
+            <div class="input-icon-wrapper">
+              <i class="phone input-icon"></i>
+              <input type="text" id="phone" name="phone" placeholder="(00) 0 0000-0000">
+            </div>
+          </div>
+
+          <div class="textarea-wrapper">
+            <label for="description-service">Descrição do Serviço:</label>
+            <textarea id="description-service" name="description-service" cols="30" rows="5" placeholder="Banho e Tosa"></textarea>
+          </div>
+
+          <div class="flex">
+            <div class="input-group flex-2">
+              <label for="data">Data:</label>
+              <div class="input-icon-wrapper">
+                <i class="calendar input-icon"></i>
+                <input type="date" id="data" name="data">
+              </div>
+            </div>
+
+            <div class="input-group flex-1">
+              <label for="time">Hora:</label>
+              <div class="input-icon-wrapper">
+                <i class="clock input-icon"></i>
+                <input type="time" id="time" name="time">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="action-wrapper">
+            <button class="btn-submit">Agendar</button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

@@ -9,7 +9,7 @@
     --content-primary: #FFFFFF;
     --content-secondary: #98959D;
     --content-tertiary: #666666;
-    --content-brand: #9282FA;
+    --content-brand: #9282fa;
 
     /* Background */
     --background-primary: #151515;
@@ -50,19 +50,20 @@
 
 
 }
+
 body {
     background-color: #14151D;
+    position: relative;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: calc(100vh - 1.5rem);
-    grid-template-areas: ("");
-
-    padding: 0.75rem;
-
+    display: flex;
+    position: relative;
+    z-index: 1;
+    filter: blur(20px);
 }
+
+
  
 .logo {
     position: absolute;

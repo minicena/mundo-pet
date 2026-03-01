@@ -31,7 +31,7 @@
           <div class="input-group schedule-date flex-1">
               <div class="input-icon-wrapper">
                 <i class="calendar input-icon"></i>
-                <input type="date" id="data" name="data">
+                <input type="date" id="date" name="data">
             </div>
 
         </header>
@@ -188,15 +188,18 @@
               <label for="data">Data:</label>
               <div class="input-icon-wrapper">
                 <i class="calendar input-icon"></i>
-                <input type="date" id="data" name="data">
+                <input type="date" id="new-date" name="date">
               </div>
             </div>
 
             <div class="input-group flex-1">
-              <label for="time">Hora:</label>
-              <div class="input-icon-wrapper">
+              <label>Hora:</label>
+              <div class=" time-picker input-time" >
                 <i class="clock input-icon"></i>
-                <input type="time" id="time" name="time">
+                <input type="text" id="timeInput" placeholder="09:00" readonly>
+                <span id="arrowTime" class="arrow icon-time"></span>
+                <div class="dropdown" id="dropdown"></div>
+                </div>
               </div>
             </div>
           </div>

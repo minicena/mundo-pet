@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./src/assets/Dog-Duotone--Streamline-Phosphor.svg" />
+
+    <title>Mundo Pet</title>
+    
+  <link rel="icon" href="Dog-Duotone--Streamline-Phosphor.svg"><script defer src="main.js"></script></head>
+  <body>
+    <img src="./src/assets/logo.svg" alt="logo" class="logo" />
+    <div class="container">
+      <anside class="schedule">
+        <header>
+          <div class="title">
+            <h1>Sua agenda</h1>
+            <p>
+              Aqui você pode ver todos os clientes e serviços agendados para
+              hoje.
+            </p>
+          </div>
+
+          <div class="input-group schedule-date flex-1">
+              <div class="input-icon-wrapper">
+                <i class="calendar input-icon"></i>
+                <input type="date" id="data" name="data">
+            </div>
+
+        </header>
+
+
+        <!-- Schedule Period: Morning -->
+
+        <section class="schedule-period">
+          <header>
+            <img src="./src/assets/Sun Fog.svg" alt="Manhã" />
+            <strong>Manhã</strong>
+            <time>09h-12h</time>
+          </header>
+          <ul id="period-morning" class="period">
+            <li>
+              <div class="appointment-info">
+                <time>09:00</time>
+                <strong>Thor</strong>
+                <span class="owner">/ Fernanda Costa</span>
+              </div>
+
+              <p class="appointment-type">Vacinação</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Schedule Period: Afternoon -->
+
+        <section class="schedule-period">
+          <header>
+            <img src="./src/assets/Cloud-Sun.svg" alt="Manhã" />
+            <strong>Tarde</strong>
+            <time>13h-18h</time>
+          </header>
+          <ul id="period-afternoon" class="period">
+            <li>
+              <div class="appointment-info">
+                <time>13:00</time>
+                <strong>Mel</strong>
+                <span class="owner">/ João Souza</span>
+              </div>
+
+              <p class="appointment-type">Corte de Unhas</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+
+            <li>
+              <div class="appointment-info">
+                <time>14:00</time>
+                <strong>Bella</strong>
+                <span class="owner">/ Pedro Martins</span>
+              </div>
+
+              <p class="appointment-type">Aplicação de Anti-pulgas</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+
+            <li>
+              <div class="appointment-info">
+                <time>15:00</time>
+                <strong>Simba</strong>
+                <span class="owner">/ Juliana Rocha</span>
+              </div>
+
+              <p class="appointment-type">Tosa Higiênica</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Schedule Period: Night -->
+
+        <section class="schedule-period">
+          <header>
+            <img src="./src/assets/Moon-Stars--Streamline-Solar.svg" alt="Noite" />
+            <strong>Noite</strong>
+            <time>19h-21h</time>
+          </header>
+          <ul id="period-night" class="period">
+            <li>
+              <div class="appointment-info">
+                <time>20:00</time>
+                <strong>Max</strong>
+                <span class="owner">/ Camila Santos</span>
+              </div>
+
+              <p class="appointment-type">Limpeza de Dentes</p>
+
+              <button class="remove">Remover Agendamento</button>
+            </li>
+          </ul>
+        </section>
+
+              <!-- Button to add new appointment -->
+
+      <div class="appointment-container">
+        <div class="appointment-scheduling">
+          <button class="btn-new-scheduling">Novo Agendamento</button>
+        </div>
+      </div>
+
+      </anside>
+
+
+    </div>
+
+    <section class="form-scheduling">
+      <form method="POST" enctype="multipart/form-data">
+        <div class="close">
+          <img  class="btn-close" src="./src/assets/Close-Small-Fill--Streamline-Rounded-Fill---Material-Symbols.svg" alt="close">
+        </div>
+        <div class="form-title">
+          <h1>Agende um Atendimento</h1>
+          <p>Preencha os dados do cliente para realizar o agendamento: </p>
+        </div>
+        <fieldset class="input-fieldset">
+
+          <div class="input-group">
+            <label for="owner-name">Nome do Tutor:</label>
+            <div class="input-icon-wrapper">
+              <i class="user input-icon"></i>
+              <input type="text" id="owner-name" name="owner-name" placeholder="Helena Souza">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="pet-name">Nome do Pet:</label>
+            <div class="input-icon-wrapper">
+              <i class="pet input-icon"></i>                
+              <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Telefone:</label>
+            <div class="input-icon-wrapper">
+              <i class="phone input-icon"></i>
+              <input type="text" id="phone" name="phone" placeholder="(00) 0 0000-0000">
+            </div>
+          </div>
+
+          <div class="textarea-wrapper">
+            <label for="description-service">Descrição do Serviço:</label>
+            <textarea id="description-service" name="description-service" cols="30" rows="5" placeholder="Banho e Tosa"></textarea>
+          </div>
+
+          <div class="flex">
+            <div class="input-group flex-2">
+              <label for="data">Data:</label>
+              <div class="input-icon-wrapper">
+                <i class="calendar input-icon"></i>
+                <input type="date" id="data" name="data">
+              </div>
+            </div>
+
+            <div class="input-group flex-1">
+              <label for="time">Hora:</label>
+              <div class="input-icon-wrapper">
+                <i class="clock input-icon"></i>
+                <input type="time" id="time" name="time">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="action-wrapper">
+            <button class="btn-submit">Agendar</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

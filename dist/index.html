@@ -14,7 +14,7 @@
 
     <title>Mundo Pet</title>
     
-  </head>
+  <link rel="icon" href="Dog-Duotone--Streamline-Phosphor.svg"><script defer src="main.js"></script></head>
   <body>
     <img src="./src/assets/logo.svg" alt="logo" class="logo" />
     <div class="container">
@@ -31,7 +31,7 @@
           <div class="input-group schedule-date flex-1">
               <div class="input-icon-wrapper">
                 <i class="calendar input-icon"></i>
-                <input type="date" id="date" name="data">
+                <input type="date" id="data" name="data">
             </div>
 
         </header>
@@ -188,18 +188,15 @@
               <label for="data">Data:</label>
               <div class="input-icon-wrapper">
                 <i class="calendar input-icon"></i>
-                <input type="date" id="new-date" name="date">
+                <input type="date" id="data" name="data">
               </div>
             </div>
 
             <div class="input-group flex-1">
-              <label>Hora:</label>
-              <div class=" time-picker input-time" >
+              <label for="time">Hora:</label>
+              <div class="input-icon-wrapper">
                 <i class="clock input-icon"></i>
-                <input type="text" id="timeInput" placeholder="09:00" readonly>
-                <span id="arrowTime" class="arrow icon-time"></span>
-                <div class="dropdown" id="dropdown"></div>
-                </div>
+                <input type="time" id="time" name="time">
               </div>
             </div>
           </div>

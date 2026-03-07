@@ -158,29 +158,33 @@
             <label for="owner-name">Nome do Tutor:</label>
             <div class="input-icon-wrapper">
               <i class="user input-icon"></i>
-              <input type="text" id="owner-name" name="owner-name" placeholder="Helena Souza">
+              <input type="text" id="owner-name" name="owner-name" placeholder="Helena Souza" required>
             </div>
+            <span id="text-error-owner" class="text-error"></span>
           </div>
 
           <div class="input-group">
             <label for="pet-name">Nome do Pet:</label>
             <div class="input-icon-wrapper">
               <i class="pet input-icon"></i>                
-              <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar">
+              <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar" required>
             </div>
+             <span id="text-error-pet" class="text-error"></span>
           </div>
 
           <div class="input-group">
             <label for="phone">Telefone:</label>
             <div class="input-icon-wrapper">
               <i class="phone input-icon"></i>
-              <input type="text" id="phone" name="phone" placeholder="(00) 0 0000-0000">
+              <input type="text" id="phone" name="phone" placeholder="(00) 0 0000-0000" required>
             </div>
+            <span id="text-error-phone" class="text-error"></span>
           </div>
 
           <div class="textarea-wrapper">
             <label for="description-service">Descrição do Serviço:</label>
-            <textarea id="description-service" name="description-service" cols="30" rows="5" placeholder="Banho e Tosa"></textarea>
+            <textarea id="description-service"  name="description-service" cols="30" rows="5" placeholder="Banho e Tosa" required></textarea>
+            <span id="text-error" class="text-error"></span>
           </div>
 
           <div class="flex">
@@ -188,7 +192,7 @@
               <label for="data">Data:</label>
               <div class="input-icon-wrapper">
                 <i class="calendar input-icon"></i>
-                <input type="date" id="new-date" name="date">
+                <input type="date" id="new-date" name="date" required>
               </div>
             </div>
 
@@ -196,7 +200,7 @@
               <label>Hora:</label>
               <div class=" time-picker input-time" >
                 <i class="clock input-icon"></i>
-                <input type="text" id="timeInput" placeholder="09:00" readonly>
+                <input type="text" id="timeInput" placeholder="09:00" readonly required>
                 <span id="arrowTime" class="arrow icon-time"></span>
                 <div class="dropdown" id="dropdown"></div>
                 </div>

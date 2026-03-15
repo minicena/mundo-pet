@@ -36,6 +36,7 @@
   background-color: var(--background-tertiary);
   border-radius: 0.5rem;
   margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .schedule-period header {
@@ -71,7 +72,7 @@
   padding-bottom: 0.1rem;
 }
 
-.schedule-period li {
+li {
   display: flex;
   margin: 0.8rem;
   flex-direction: column;
@@ -97,6 +98,7 @@ time {
 
 .schedule-period .appointment-info {
   & strong {
+    padding-left: 0.7rem;
     font: var(--label-medium);
     color: var(--content-primary);
   }
@@ -187,7 +189,7 @@ time {
     margin: 0;
   }
 
-  .schedule-period li {
+   li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -217,5 +219,10 @@ time {
     width: 44.4rem;
     justify-content: flex-end;
     background: none;
+  }
+
+  .schedule-period ul {
+
+    padding-bottom: 4rem;
   }
 }

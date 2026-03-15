@@ -1,3 +1,5 @@
+import { schedulesDay } from "../schedules/load.js"
+
 const showSchedule = document.querySelector(".btn-new-scheduling")
 const container = document.querySelector(".container")
 const showForm = document.querySelector(".form-scheduling")
@@ -13,4 +15,5 @@ showSchedule.addEventListener("click", () =>  {
 closeForm.addEventListener("click", () => {
     showForm.classList.remove("visivel")
     container.classList.remove("is-blurred")
+
 })
